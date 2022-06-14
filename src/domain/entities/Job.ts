@@ -17,7 +17,7 @@ export interface IJob {
   contactEmail?: string;
   status: JobStatus;
   createdAt: Date;
-  updatedAt?: Date;
+  updatedAt?: Date | null;
 }
 
 export class Job implements IJob {
