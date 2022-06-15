@@ -19,7 +19,7 @@ export class JobRepository implements IJobRepository {
   jobs: IJob[] = [];
 
   findAll(): IJob[] {
-    return this.jobs.sort(
+    return [...this.jobs].sort(
       (a, b) => b.createdAt.getTime() - a.createdAt.getTime()
     );
   }
