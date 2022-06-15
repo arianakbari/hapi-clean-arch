@@ -18,13 +18,14 @@ export const init = async () => {
 
 export const start = async () => {
   await server.start();
+
   Logger.info(LOG_LABELS.START_APP, `Server running on ${server.info.uri}`);
+
   return server;
 };
 
 process.on("unhandledRejection", (err) => {
+  console.log(err);
   Logger.error(LOG_LABELS.UNHANDLED_INTERNAL_ERROR, "Error", err as Error);
   process.exit(1);
 });
-
-init();
