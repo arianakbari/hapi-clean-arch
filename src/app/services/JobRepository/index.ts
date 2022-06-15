@@ -1,11 +1,11 @@
 import { v4 as uuidv4 } from "uuid";
 import { injectable } from "inversify";
 
-import { IJob, Job } from "domain/entities/Job";
-import { NotFoundException } from "domain/entities/exceptions";
-import { IJobRepository } from "domain/boundaries/output/IJobRepository";
-import { AddJobDto } from "domain/dtos/AddJobDto";
-import { UpdateJobDto } from "domain/dtos/UpdateJobDto";
+import { IJob, Job } from "../../../domain/entities/Job";
+import { NotFoundException } from "../../../domain/entities/exceptions";
+import { IJobRepository } from "../../../domain/boundaries/output/IJobRepository";
+import { AddJobDto } from "../../../domain/dtos/AddJobDto";
+import { UpdateJobDto } from "../../../domain/dtos/UpdateJobDto";
 
 import "reflect-metadata";
 

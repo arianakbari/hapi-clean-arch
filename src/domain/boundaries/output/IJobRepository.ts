@@ -1,6 +1,6 @@
-import { IJob } from "domain/entities/Job";
-import { AddJobDto } from "domain/dtos/AddJobDto";
-import { UpdateJobDto } from "domain/dtos/UpdateJobDto";
+import { IJob } from "../../entities/Job";
+import { AddJobDto } from "../../dtos/AddJobDto";
+import { UpdateJobDto } from "../../dtos/UpdateJobDto";
 
 export interface IJobRepository {
   findAll(): IJob[];

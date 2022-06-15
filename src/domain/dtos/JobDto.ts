@@ -1,8 +1,11 @@
 import { JobStatus, JobType } from "../entities/Job";
 
-export class AddJobDto {
+export class JobDto {
+  id!: string;
   type!: JobType;
   priceInPence!: number;
-  status!: JobStatus;
   contactEmail?: string;
+  status!: JobStatus;
+  createdAt!: Date;
+  updatedAt?: Date;
 }

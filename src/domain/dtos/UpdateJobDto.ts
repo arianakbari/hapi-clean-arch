@@ -1,4 +1,4 @@
-import { JobStatus } from "domain/entities/Job";
+import { JobStatus } from "../entities/Job";
 
 export class UpdateJobDto {
   contactEmail?: string;

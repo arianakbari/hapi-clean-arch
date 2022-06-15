@@ -1,11 +1,11 @@
 import { injectable, inject } from "inversify";
 
-import { IJobService } from "domain/boundaries/input/IJobService";
-import { IJobRepository } from "domain/boundaries/output/IJobRepository";
-import { IJob } from "domain/entities/Job";
-import { TYPES } from "domain/types";
-import { AddJobDto } from "domain/dtos/AddJobDto";
-import { UpdateJobDto } from "domain/dtos/UpdateJobDto";
+import { IJobService } from "../../boundaries/input/IJobService";
+import { IJobRepository } from "../../boundaries/output/IJobRepository";
+import { IJob } from "../../entities/Job";
+import { TYPES } from "../../types";
+import { AddJobDto } from "../../dtos/AddJobDto";
+import { UpdateJobDto } from "../../dtos/UpdateJobDto";
 
 import "reflect-metadata";
 

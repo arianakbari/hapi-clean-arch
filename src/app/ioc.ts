@@ -1,11 +1,11 @@
 import { Container } from "inversify";
 
-import { IJobRepository } from "domain/boundaries/output/IJobRepository";
-import { IJobService } from "domain/boundaries/input/IJobService";
+import { IJobRepository } from "../domain/boundaries/output/IJobRepository";
+import { IJobService } from "../domain/boundaries/input/IJobService";
+import { JobService } from "../domain/services/JobService";
 import { JobRepository } from "./services/JobRepository";
-import { JobService } from "domain/services/JobService";
 
-import { TYPES } from "domain/types";
+import { TYPES } from "../domain/types";
 
 export const container = new Container();
 
